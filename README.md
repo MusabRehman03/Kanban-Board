@@ -1,4 +1,5 @@
-Kanban Board
+KANBAN BOARD
+
 
 Overview:
 
@@ -7,52 +8,33 @@ This is a simple Kanban Board built using HTML, Tailwind CSS, and JavaScript. Th
 Features:
 
 Add new tasks with a title, description, and status.
-
 Edit and update existing tasks.
-
 Delete tasks.
-
 Drag and drop tasks between columns.
-
 Search tasks by title.
-
 Tasks are stored in localStorage for persistence.
 
-Technologies Used
+Technologies Used:
 
 HTML for structuring the web page.
-
 Tailwind CSS for styling.
-
 JavaScript for logic and interactivity.
-
-Flowbite for enhanced UI components.
-
 LocalStorage for data persistence.
 
 Installation & Usage:
 
 Clone the repository:
-
 git clone https://github.com/MusabRehman03/kanban-board.git
-
 Navigate to the project folder:
-
 cd kanban-board
-
 Open the index.html file in your browser to start using the Kanban board.
 
 How It Works:
 
 Click the Add button to open the task creation modal.
-
 Enter the task title, description, and status.
-
 Click Add Task to save the task.
-
 Click on any task to edit or delete it.
-
 Drag and drop tasks between columns to change their status.
-
 Use the search bar to find tasks quickly.
 
