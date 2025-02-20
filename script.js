@@ -38,6 +38,8 @@ function editTask(index) {
     addButton.replaceWith(newAddButton); // Replace old "Add" button with new "Update" button
 
     document.querySelector("[data-modal-target='crud-modal']").click();
+    let heading = document.getElementById("modal-heading")
+    heading.innerText = "Edit Task"
 }
 
 function delTask(index) {
@@ -45,6 +47,8 @@ function delTask(index) {
     newArr.splice(index, 1);
     localStorage.setItem("arr", JSON.stringify(newArr));
     refresh();
+    let heading = document.getElementById("modal-heading")
+    heading.innerText = "Edit Task"
 }
 
 function saveTask(index) {
@@ -54,7 +58,10 @@ function saveTask(index) {
     
     localStorage.setItem("arr", JSON.stringify(arr));
     refresh();
+    let heading = document.getElementById("modal-heading")
+    heading.innerText = "Add New Task"
     document.querySelector("[data-modal-toggle='crud-modal']").click();
+   
 }
 
 function refresh(newArr = arr) {
@@ -126,5 +133,8 @@ function search() {
     const newArr = arr.filter(item => item.title.toLowerCase().includes(query));
     refresh(newArr);
 }
-
+function transformFromEditToNew(){
+    let heading = document.getElementById("modal-heading")
+    heading.innerText = "Add New Task"
+}
 refresh();
